@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+       <section id="about">
+         <h2>Rohit Ranjan Kumar</h2>
+         <img src="image.1.png" alt="profile picture"> 
+
+         <p>Hello! My name is Rohit Ranjan kumar.I am learning web devlopment and this is my first portfolio website.</p>
+       </section>
+
+       <hr>
+
+       <section id="skills">
+          <h2>My Skills</h2>
+            <table id="table">
+              <tr>
+                <th class="skill">skill</th>
+                <th class="skill">level</th>
+              </tr>
+
+              <tr>
+                <td class="skill">HTML</td>
+                <td class="skill">Beginner</td>
+              </tr>
+              <tr>
+                <td class="skill">CSS</td>
+                <td class="skill">Beginner</td>
+              </tr>
+              <tr>
+                <td class="skill">JavaScript</td>
+                <td class="skill">Learning</td>
+              </tr>
+            </table>
+       </section>
+
+       <hr>
+
+       <section id="project">
+        <h2>My Projects</h2>
+          <article id="snake">
+            <b>Snake ,water and gun Game: </b>A simple Snake ,Waterand Gun Game that we used to play as kid by only usin python.
+          </article>
+
+          <article id="form">
+              <b>User Form: </b>A form webpage with fields like name, email,contact no and message for practicing from handiling.
+          </article>
+
+          <article id="card">
+            <b>Birthday Card: </b>A creative greeting card webpage designed with HTML structure and CSS styling.
+          </article>
+       </section>
+
+       <hr>
+
+       <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <table id="contact-box">
+    
+              <tr>
+                <td class="contact">Name:</td>
+                <td class="contact" ><input type="text" placeholder="Enter your name" required ></td>
+              </tr>
+
+              <tr>
+                <td class="contact">Email:</td>
+                <td class="contact" ><input type="email" placeholder="Enter your email" required></td>
+              </tr>
+
+              <tr>
+                <td class="contact">Message:</td>
+                <td class="contact"><textarea placeholder="Enter your message" required></textarea></td>
+              </tr>
+
+              <tr>
+                <td colspan="2" class="contact">
+                  <button type="submit">Send</button>
+                </td>
+              </tr>
+
+            </table>
+        </form>             
+        
+       </section>
+
+       <button id="backtotop">Back to Top</button>
+       <script>
+           const btn = document.getElementById("backtotop");
+           window.onscroll = function() {
+            if (document.documentElement.scrollTop > 200) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+         };
+         btn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+         };
+       </script>
+         
+    </main>
+        
+      <div class="footer">
+      
+      </div>
+   
+</body>
+</html>
