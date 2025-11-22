@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+       <section id="about">
+         <h2>Hi, I am<br><span class="highlight">Full Stack Developer <br><br><p id="para">Building modern web applications with MERN stack.</p></span></h2>
+         <img id="img" src="image.1.png" alt="profile picture"> 
+        </section>
+        
+        <h2>About Me</h2>
+        <p >Hello! My name is Rohit Ranjan Kumar, and I am currently learning web development. This is my first portfolio website where I showcase my passion for creating interactive and responsive web pages. I am a student at KR Mangalam University, pursuing a B.Tech CSE degree, and I am deeply interested in technology and coding. I love exploring new skills every day, and i always aim to improve my knowledge in the field of web development. With a hardworking and consistent mindset, I am determined to grow as a developer and build creative projects that make a real impact.</p>
+        <br><br>
+
+       <section id="skills">
+          <h2>My Skills</h2>
+            <article class="skill-box">
+              <h3>HTML</h3>
+              <p>Beginner</p> 
+
+            </article>
+            <article class="skill-box">
+              <h3>CSS</h3>
+              <p>Beginner</p> 
+
+            </article>
+            <article class="skill-box">
+              <h3>JAVASCRIPT</h3>
+              <p>Beginner</p> 
+
+            </article>
+       </section>
+       
+
+       <section id="project">
+        <h2>My Projects</h2>
+
+          <article class="project-box">
+            <h3>Project 1</h3>
+            <p>A simple snake-water-gun game.</p>
+          </article>
+
+          <article class="project-box">
+            <h3>Project 2</h3>
+            <p>A demo webapp for fitness.</p>
+          </article>
+
+       </section>
+
+       <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <table id="contact-box">
+    
+              <tr>
+                <td class="contact">Name:</td>
+                <td class="contact" ><input type="text" placeholder="Enter your name" required ></td>
+              </tr>
+
+              <tr>
+                <td class="contact">Email:</td>
+                <td class="contact" ><input type="email" placeholder="Enter your email" required></td>
+              </tr>
+
+              <tr>
+                <td class="contact">Message:</td>
+                <td class="contact"><textarea placeholder="Enter your message" required></textarea></td>
+              </tr>
+
+              <tr>
+                <td colspan="2" class="contact">
+                  <button type="submit">Send</button>
+                </td>
+              </tr>
+
+            </table>
+        </form>             
+       </section>
+
+       <button id="backtotop">Back to Top</button>
+
+       <script>
+           const btn = document.getElementById("backtotop");
+           window.onscroll = function() {
+            btn.style.display = document.documentElement.scrollTop > 200 ? "block" : "none";
+           };
+           btn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+           };
+       </script>
+         
+    </main>
+        
+    <footer>
+        © 2025 rohit ranjan kumar. All rights reserved.
+    </footer>
+   
+</body>
+</html>

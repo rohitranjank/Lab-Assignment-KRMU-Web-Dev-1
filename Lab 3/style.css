@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: whitesmoke;
+    color:rgb(56, 55, 55);
+}
+
+header {
+    background:rgb(42, 42, 239);
+    padding: 18px 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+#about h2 {
+    font-size: 48px;
+   
+}
+
+.highlight {
+    color: orangered;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+}
+
+#para { 
+    color: rgb(52, 52, 52);
+    font-size: small;
+}
+
+section h2 {
+    margin-bottom: 12px;
+}
+
+#skills {
+    padding: 30px 40px;
+}
+
+.skill-box {
+    background: #004aad;
+    color: white;
+    display: inline-block;
+    padding: 18px;
+    width: 369px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.skill-box p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+#project {
+    padding: 30px 40px;
+}
+
+.project-box {
+    background: white;
+    width: 70%;
+    padding: 20px;
+    margin: 15px auto;
+    border: 1px solid rgb(158, 157, 157);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project-box p {
+    margin-top: 5px;
+}
+
+#contact {
+    padding: 30px 40px;
+}
+
+#contact-box {
+    width: 350px;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+#contact-box button {
+    width: 100%;
+    padding: 10px;
+    background: rgb(68, 68, 204);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#contact-box button:hover {
+    background: rgb(49, 49, 213);
+}
+#backtotop {
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    padding: 10px 15px;
+    border: none;
+    background:rgb(49, 49, 213) ;
+    color: white;
+    border-radius: 6px;
+    display: none;
+    cursor: pointer;
+}
+
+#backtotop:hover {
+    background:rgb(28, 28, 236);
+}
+
+footer {
+    margin-top: 40px;
+    background: rgb(49, 49, 213);
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #img {
+        margin-top: 20px;
+        width: 180px;
+    }
+
+    .skill-box {
+        width: 100%;
+    }
+
+    .project-box {
+        width: 100%;
+    }
+
+    #contact-box {
+        width: 100%;
+    }
+}
