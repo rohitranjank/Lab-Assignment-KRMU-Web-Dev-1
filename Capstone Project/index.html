@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Foodie — Food Delivery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Foodie</a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#">Categories</a>
+        <a href="#">Restaurants</a>
+        <a href="#">Offers</a>
+        <a href="#">Testimonials</a>
+        <a href="#">App</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-outline">Login</button>
+        <button class="btn btn-primary">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1>Delicious food, delivered to you</h1>
+          <p class="lead">Order from your favorite restaurants and get your meal delivered fast, fresh, and hot. Discover the best food in your city with Foodie!</p>
+          <div class="cta-row">
+            <a class="btn btn-primary large" href="#">Order Now</a>
+          </div>
+
+          <form class="search-card" role="search" aria-label="Search restaurants">
+            <input type="text" name="location" placeholder="Enter your location" aria-label="Location" />
+            <select name="category" aria-label="Category">
+              <option value="">All Categories</option>
+              <option>Pizza</option>
+              <option>Burgers</option>
+              <option>Sushi</option>
+              <option>Indian</option>
+            </select>
+            <button class="btn btn-search" type="submit">Search</button>
+          </form>
+          <br><br>
+
+          <h2 class="section-title">Browse by Category</h2>
+          <div class="category-grid">
+            <div class="cat-card"><img id="p" src="web_cap_pizza.webp" alt=""><span>Pizza</span></div>
+            <div class="cat-card"><img id="p" src="web_cap_burger.webp" alt=""><span>Burgers</span></div>
+            <div class="cat-card"><img id="p" src="web_cap_shushi.jpg" alt=""><span>Sushi</span></div>
+            <div class="cat-card"><img id="p" src="web_cap_indianfood.png" alt=""><span>Indian</span></div>
+            <div class="cat-card"><img id="p" src="web_cap_chinese.webp" alt=""><span>Chinese</span></div>
+            <div class="cat-card"><img id="p" src="web_cap_dessert.png" alt=""><span>Desserts</span></div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <img class="hero-image" src="web_cap_image1.jpeg" alt="Delicious food">
+        </div>
+      </div>
+    </section>
+
+    <section class="featured container">
+      <h2 class="section-title">Featured Restaurants</h2>
+      <div class="featured-grid">
+        <article class="restaurant-card">
+          <img src="web_cap_pizza2.webp" alt="Pizza Palace">
+          <div class="card-body">
+            <h3>Pizza Palace</h3>
+            <p class="muted">Pizza, Italian</p>
+            <div class="rating">⭐ 4.8</div>
+          </div>
+        </article>
+
+        <article class="restaurant-card">
+          <img src="web_cap_burger2.jpg" alt="Burger Hub">
+          <div class="card-body">
+            <h3>Burger Hub</h3>
+            <p class="muted">Burgers, Fast Food</p>
+            <div class="rating">⭐ 4.6</div>
+          </div>
+        </article>
+
+        <article class="restaurant-card">
+          <img src="web_cap_shushi2.jpg" alt="Sushi World">
+          <div class="card-body">
+            <h3>Sushi World</h3>
+            <p class="muted">Sushi, Japanese</p>
+            <div class="rating">⭐ 4.7</div>
+          </div>
+        </article>
+
+        <article class="restaurant-card">
+          <img src="web_cap_spice.jpg" alt="Spice Route">
+          <div class="card-body">
+            <h3>Spice Route</h3>
+            <p class="muted">Indian, Curry</p>
+            <div class="rating">⭐ 4.5</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="promo container">
+      <h2 class="section-title">Promo Offers</h2>
+      <div class="promo-row">
+        <div class="promo-card">🎉 Get 30% OFF on your first order!</div>
+        <div class="promo-card">🚚 Free delivery on orders above $20</div>
+        <div class="promo-card">🍔 Buy 1 Get 1 Free on Burgers every Friday</div>
+      </div>
+    </section>
+
+    <section class="testimonials container">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="test-grid">
+        <div class="test-card">
+          <img src="rew_1.jpg" alt="">
+          <p class="stars">★★★★★</p>
+          <blockquote>"Foodie makes ordering food so easy and quick! Always on time."</blockquote>
+          <p class="muted">- Sarukh</p>
+        </div>
+        <div class="test-card">
+          <img src="rew_2.jpg" alt="">
+          <p class="stars">★★★★★</p>
+          <blockquote>"Great selection of restaurants and amazing offers."</blockquote>
+          <p class="muted">- Anamika</p>
+        </div>
+        <div class="test-card">
+          <img src="rew_3.jpg" alt="">
+          <p class="stars">★★★★★</p>
+          <blockquote>"The app is super user-friendly and the customer support is fantastic."</blockquote>
+          <p class="muted">-Subhansh</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-download container">
+      <div class="app-inner">
+        <div class="app-text">
+          <h2>Get the Foodie App</h2>
+          <p>Order faster from your phone — available on Play Store and App Store.</p>
+          <div class="download-buttons">
+            <a class="small-btn" href="#" aria-label="Download on Google Play">Google Play</a>
+            <a class="small-btn" href="#" aria-label="Download on App Store">App Store</a>
+          </div>
+        </div>
+        <div>
+          <img id="app" src="foodie_logo.png" alt="App preview">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>Foodie</h4>
+        <p>Delivering great food across your city.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Links</h5>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Follow</h5>
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year"></span> Foodie. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
